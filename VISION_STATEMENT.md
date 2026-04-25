@@ -25,7 +25,7 @@ For the techies: think of it as a social connection optimization engine.
 
 Right now, finding your people means initiating conversations, investing effort, 
 and repeating the process over and over — only to find out it wasn't the right 
-fit. We give you the hashmap first. The keys and the values. You choose which 
+fit. We give you the **hashmap first**. The keys and the values. You choose which 
 key is worth your time.
 
 Through Orbit, you can find:
@@ -41,7 +41,7 @@ meet up. No waiting. No distance. Just shared context and a reason to begin.
 
 ## Who is Orbit for?
 
-Primary user: 21–27 year olds navigating early career life in Indian metros. 
+Primary user: 21–32 year olds navigating early to mid career life in Indian metros. 
 New to a city, new to a job, or simply new to adulting. They have ambitions, 
 interests, and a limited social circle that doesn't fully reflect who they are 
 or where they're headed. They're not antisocial — they're time-poor and 
