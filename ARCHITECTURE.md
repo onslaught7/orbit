@@ -2,7 +2,18 @@
 
 ## Functional Requirements (What does the system do ?).
 
-- User Registers with a unique anonymous reveal name, the full name, age, sex, birth date, email, phone number, location etc.
+- User sees registration page, on hitting the application the first time.
+- Registers with user credentials namely
+  - unique anonymous reveal name (public visibility mandatory and cannot have the first or last name in it) 
+  - full name (visibility to be revealed based on user specified scope)
+  - age (visibility to be revealed based on user specified scope)
+  - sex (visibility to be revealed based on user specified scope)
+  - birth date (visibility to be revealed based on user specified scope)
+  - email (always hidden)
+  - phone number (always hidden)
+  - location (always hidden)
+  - profile picture (visibility to be revealed based on user specified scope)
+  On successful registration, the user account gets created and will be prompted for user data, the actual data used for matching and recommendations.
 - Gets Matches and Recommendations based on personal data, choices and defined proximity.
 - Users can also view people with locked profile images or unlocked in app images within the proximity and view all that they have made public (which the app allows).
 - System surfaces matches when conditions match.
