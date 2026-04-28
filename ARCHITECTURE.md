@@ -19,6 +19,8 @@
   - On successful registration, the user account gets created and will be prompted for user data, the actual data used for matching and recommendations.
 - Gets Matches and Recommendations based on personal data, choices and defined proximity.
 - Users can also view people with locked profile images or unlocked in app images within the proximity and view all that they have made public (which the app allows).
+- Users have a set of predefined options on the basis of which they can prioritize matches.
+- Users are required to list there interests in order of criticality.
 - System surfaces matches when conditions match.
 - The user defines what are the goals or criteria of a successful match, it can be multiple (hobby partner, romantic partner, business partner, recruiter to employee or vice versa).
 - Proximity is mapped throughout the day and best matches are shown (real-time or after a buffer chosen by the user among the predefined options).
