@@ -17,7 +17,7 @@
   - location (always hidden, but used for proximity calculation)
   - profile picture (visibility to be revealed based on user specified scope, **Connections only** by default)
   - On successful registration, the user account gets created and will be prompted for user data, the actual data used for matching and recommendations.
-- 
+- Add this line and modify it. 
 - Gets Matches and Recommendations based on personal data, choices and defined proximity.
 - Users can also view people with locked profile images or unlocked in app images within the proximity and view all that they have made public (which the app allows).
 - Users have a set of predefined options on the basis of which they can prioritize matches.

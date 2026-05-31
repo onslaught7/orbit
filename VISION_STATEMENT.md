@@ -32,7 +32,7 @@ Through Orbit, you can find:
 - The next business partner
 - The next co-founder
 - The right employee or recruiter
-- The dream partner
+- The dream date
 - The gym bro
 - The next-door neighbor who loves the same obscure band as you
 
