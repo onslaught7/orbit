@@ -1,11 +1,11 @@
-# System Architecture and Design Decisions
+# System Architecture and Design Decisions V1.0
 
 ## Functional Requirements (What does the system do ?).
 
 - All system functionalities require authentication, unauthenticated users are routed to authentication.
 - Authentication is through Google or Microsoft **OAUTH**. On successful authentication registration is required.
 - Returning users (already registered but logged out) authenticate and are routed directly to the application, not registration.
-- Registers with user profile data namely
+- Registers with user profile data namely:
   - unique anonymous reveal name (public visibility mandatory and cannot have the first or last name in it based on case-insensitive substring match against full name tokens) 
   - full name (visibility to be revealed based on user specified scope, **Private** by default, pulled from Microsoft or Google during Authentication, editable)
   - sex (visibility to be revealed based on user specified scope, **Connections only** by default)
@@ -17,16 +17,27 @@
   - location (always hidden, but used for proximity calculation)
   - profile picture (visibility to be revealed based on user specified scope, **Connections only** by default)
   - On successful registration, the user account gets created and will be prompted for user data, the actual data used for matching and recommendations.
-- Add this line and modify it. 
-- Gets Matches and Recommendations based on personal data, choices and defined proximity.
-- Users can also view people with locked profile images or unlocked in app images within the proximity and view all that they have made public (which the app allows).
-- Users have a set of predefined options on the basis of which they can prioritize matches.
-- Users are required to list their interests in order of criticality.
-- System surfaces matches when conditions match.
-- The user defines what are the goals or criteria of a successful match, it can be multiple (hobby partner, romantic partner, business partner, recruiter to employee or vice versa).
-- Proximity is mapped throughout the day and best matches are shown (real-time or after a buffer chosen by the user among the predefined options).
-- User connects with a request.
-- Successful connection results in the unlocking of a chat interface among the connections.
-- Users can request for groups among their connections (on successful acceptance).
-- Users can reveal their other socials on the platform, where the visibility of each of their data is based on their scope definition for each field (Private, Public, To Connections only).
+- The USER provides personal data post registration namely (**connections only** by default for all fields):
+  - Profession (Business or Employee)
+  - Job Role / Unemployed / Looking for a job
+  - Hobby (At max 3 hobbies)
+  - Status (Single, Dating, Married)
+  - 
+- The USER provides intent (what is the user looking for) based on 6 different criteria, namely (provided successfully authorized):
+  - Business partner
+  - Employer
+  - Employee
+  - Date
+  - Matching Hobby
+  - Custom Request
+- The USER can at max input 3 fields, and min of one field.
+- The order of the list is the order of importance in matching, lower number is higher priority.
+- Proximity Condition
+  - The proximity condition at max is the current city.
+  - The proximity condition at min is a 100 meters radius from the current geolocation.
+  - The algorithm takes the Proximity pre-condition as the base and calculates similarity scores and matches personal user data for all the users in the given proximity with the requirements of the current USER and makes them available to the current USER, with the info and visibility based on what the other users have set (**connections only** by default).
+- Current USER can through all the users that are brought up with all the info they have made visible and send them a request to connect. This connection logic can be made fun in different way the ideation to which has to be quite different in it's own rights. Linked in has connection requests, Instagram has followers and following, the same this has to have something unique like **Add to Orbit** and **Orbiting**.
+- USERS can directly chat with **orbiters** (actually **connections only** can be replaced with **orbiters only**).
+- Every request the USER accepts the counter on the **orbiter** increases, every request of the USER that gets accepted the counter on the **orbiting** increases.
 
+### This is the first revision of the Functional Requirements, changes to this can be added and modifications to be made, where the logic might not make sense or is vague.
